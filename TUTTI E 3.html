@@ -1,0 +1,246 @@
+
+<!DOCTYPE HTML>
+<html language="en">
+	<head>
+	 <style>
+		body{
+		position: relative;
+		background-color: rgb(255, 167, 180, 0.4);
+
+		}
+
+		p{
+		color: darkred;
+		font-family: Jazz LET, fantasy;
+		text-shadow: 2px 2px ivory;
+		font-size: 25px;
+		}
+
+		#div1{
+		box-sizing: content-box;
+		display: inline-block;
+		text-align: center;
+		background-color: rgb(255, 227, 0, 0.6);
+		flex-shrink: 1;
+		margin: 10px 10px 10px 10px;
+		padding: 2px 2px 2px 2px;
+		border: 5px double yellow;
+		border-radius: 20px 20px 20px 20px;
+		height: 300px;
+		width: 400px;
+		overflow: auto;
+		scrollbar-gutter: stable both-edges;
+		background-image: url("fragolina.jpg");
+		background-position: center;
+		background-size: cover;
+		}
+		#div3{
+		box-sizing: content-box;
+		display: inline-block;
+		text-align: center;
+		background-color: rgb(255, 227, 0, 0.6);
+		flex-shrink: 1;
+		margin: 10px 10px 10px 10px;
+		padding: 2px 2px 2px 2px;
+		border: 5px double yellow;
+		border-radius: 20px 20px 20px 20px;
+		height: 300px;
+		width: 400px;
+		overflow: auto;
+		scrollbar-gutter: stable both-edges;
+		background-image: url("fragolina.jpg");
+		background-position: center;
+		background-size: cover;
+		}
+		#div4{
+		box-sizing: content-box;
+		display: inline-block;
+		text-align: center;
+		background-color: rgb(255, 227, 0, 0.6);
+		flex-shrink: 1;
+		margin: 10px 10px 10px 10px;
+		padding: 2px 2px 2px 2px;
+		border: 5px double yellow;
+		border-radius: 20px 20px 20px 20px;
+		height: 300px;
+		width: 400px;
+		overflow: auto;
+		scrollbar-gutter: stable both-edges;
+		background-image: url("fragolina.jpg");
+		background-position: center;
+		background-size: cover;
+		}
+		#div5{
+		box-sizing: content-box;
+		display: inline-block;
+		text-align: center;
+		background-color: rgb(255, 227, 0, 0.6);
+		flex-shrink: 1;
+		margin: 10px 10px 10px 10px;
+		padding: 2px 2px 2px 2px;
+		border: 5px double yellow;
+		border-radius: 20px 20px 20px 20px;
+		height: 300px;
+		width: 400px;
+		overflow: auto;
+		scrollbar-gutter: stable both-edges;
+		background-image: url("fragolina.jpg");
+		background-position: center;
+		background-size: cover;
+		}
+		
+			
+		 #div1:hover{
+		background-image: url("iron_man.jpg");
+		background-position: top;
+		background-size: cover;
+		}
+		 #div3:hover{
+		background-image: url("Wolverine.jpg");
+		background-position: top;
+		background-size: cover;
+		}
+		 #div4:hover{
+		background-image: url("Magneto.jpg");
+		background-position: top;
+		background-size: cover;
+		}
+		 #div5:hover{
+		background-image: url("Mystica.jpg");
+		background-position: top;
+		background-size: cover;
+		}
+		
+		
+		.div2{
+		box-sizing: content-box;
+		display: inline-block;
+		text-align: center;
+		background-color: rgb(250, 130, 220, 0.6);
+		background-size: contain;
+		background-repeat: no-repeat;
+		flex-shrink: 1;
+		margin: 10px 10px 10px 10px;
+		padding: 2px 2px 2px 2px;
+		border: 5px double yellow;
+		border-radius: 20px 20px 20px 20px;
+		height: 300px;
+		width: 400px;
+		overflow: hidden;
+		}
+
+		input #testo{
+		font-size: 15px;
+		autocorrect: on;
+		
+		}
+
+		input{
+		position: relative;
+		
+		}
+
+		button{
+		position: relative;
+		appearance: square-button;
+		
+		}
+	 </style>
+		<title>Vediamo</title>
+	</head>
+	<body>
+		<div id="div1">
+		 
+		</div>
+		<div id="div3">
+		 
+		</div>
+		<div id="div4">
+		 
+		</div>
+		<div id="div5">
+		 
+		</div>
+		 
+		<div class="div2">
+		 <p>
+			Oggi evento eccezionele nel Parco Kid&Go!<br>
+			I bambini potranno divertirsi insieme a: <br> Robbi Lurd 
+			contro il principe Lavapanni, Biancaneve e i 7 Lapi <br>
+			e tanti altri.
+			
+			
+		 </p>
+		</div>
+
+		<div class="div2">
+		 <p id="para">
+			
+		 </p>
+		 <p>
+			<label for="testo">soprannome</label>
+			<input type="text" value="" required maxlength="100" spellcheck="true" id="testo"/>
+			<input type="submit" value="Stampa qui!" onclick="welcome()">
+			<button type="button" onclick="Reset()">Cancella</button>
+		 </p>
+		  </div>
+		
+		<div class="div2"> 
+		 
+		 <p>Passa sulle fragoline con il mouse per scoprire il personaggio nascosto...</p>
+		
+		</div>
+		
+		<div class="div2">
+		 
+		 <div id="mah"></div>
+		 
+		</div>
+		
+
+		
+	 
+		
+	   <script>
+		
+		/*if(window.confirm("Do you really want to leave?")) {
+		window.open("Ultimo progetto qui.html");
+		}//Finalmente so come aprire un'altro progetto ahahahah*/
+		
+		function welcome() {
+		
+			let texto = document.getElementById('para');
+			let testo = document.getElementById('testo').value;
+			console.log(texto, testo);
+			texto.textContent = `Benvenuto ${testo}`;
+			
+			
+		}
+		
+
+		function Reset() {
+		let text = document.getElementById('para');
+		text.textContent = '';
+		let testo = document.getElementById('testo');
+		testo.value = '';
+		testo.focus();
+		}
+	let uccelli = ["gallina", " tacchino", " gallo", " anatra"];
+	uccelli.forEach(() => document.getElementById('mah').textContent = uccelli);
+		
+		
+	/*
+		let btnAddImage = document.getElementById("btnAddImage");
+		btnAddImage.onclick = function() {
+ 		let img = document.createElement("img");
+		let div = document.getElementById("mah");
+  		img.src = "iron_man.jpg";
+		div.style.backgroundSize = "300px 400px";
+  		div.appendChild(img);//questo funziona ma non si rimpicciolisce l'immagine!!!
+		};
+	*/
+	
+	   </script>
+	</body>
+	
+</html>

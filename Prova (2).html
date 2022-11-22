@@ -1,0 +1,253 @@
+
+<!doctype html>
+   <html lang="it">
+	<head>
+	    <style>
+		body{
+			box-sizing: border-box;
+			position: absolute;
+			background-image: url("img.jpg");
+		}
+		@media (max-width: 1024px) {
+		body {
+			height: 100%;
+			width: 100%;
+	 	  } 	
+		}
+	
+		#title {
+			text-align:center;
+			color:red;
+			font-size:20px;
+			
+		}
+		.text {
+			color: black;
+			background-color: rgb(210, 210, 210);
+			border-style: 1px rgb(210, 210, 210);
+			font-family: cursive, serif;
+			font-size: 17px;
+			font-weight: lighter;
+			text-align: center;
+			animation: change 10s infinite;
+		
+		}
+		@keyframes change {
+				0%   {background-color:red;}
+  				25%  {background-color:yellow;}
+  				50%  {background-color:blue;}
+  				75%  {background-color:green;}
+  				100% {background-color:red;}
+		}
+		
+		#div1 {
+			position: relative;
+			display: flex;
+			border: 2px solid black;
+			text-align: center;
+			height:45vw;
+			width: 97vw;
+			justify-content: center;
+			font-size: 20px;
+			background-color:gold;
+			margin: auto;
+		}
+		#div1.img{
+			background-image: url("img.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			object-fit: contain;
+		}
+		#test{
+			border: 2px blue;
+			border-style: solid;
+			height: 100px;
+		}
+		
+		.square {
+			display: inline-block;
+			position: relative;
+			justify-content:center;
+			background-color: green;
+			color: white;
+			text-align: center;
+			height: 35vw;
+			width: 25vw;
+			font-size: 18px;	
+			border: 2px solid red;	
+			margin: 30px 10px 30px 10px;
+			padding: 15px 15px 15px 15px;
+			
+		}
+				
+		#bungabunga {
+				animation: vola 5s infinite;
+				border: none;
+				position: relative;
+				display: inline-flex;
+				text-align: center;
+				justify-content: center;
+		}
+		#bagubagu {	
+				animation: striscia 2s infinite;
+				border: none;
+				position: relative;
+				display: inline-flex;
+				text-align: center;
+		}
+		@keyframes striscia {
+				from {left:1000px;}
+				to{left:0px;}
+		}
+		
+		@keyframes vola{
+				0% {left:0px; top:0px;}
+				25% {left:200px; top:100px;}
+				50% {right:150px; top:600px;}
+				75% {left:-190px; top:400px;}
+				100% {left:0px; top:0px;}
+		}
+		
+		.duval {
+			position: relative;
+			display: inline-block;
+			width: 50%;
+			height: auto;
+			text-align: center;
+			border:1px solid blue;
+			background-color:none;
+			color: white;
+			font-size: 15px;
+			margin: 30px 10px 30px 10px;
+			padding: 15px 15px 15px 15px;
+		}
+		
+		
+	  </style>
+	</head>
+	<body>
+
+	  <div id="title"><b>
+		<h1>Un nuovo ❤</h1> 
+	  </div>
+	  <div class="text">
+	
+			<p><i>Eccoci giunti al capitolo finale! Qui si decideranno le mie sorti.<br>
+		Potrò finalmente essere bravo in qualcosa?<br> Potrò finalmente avere anch'io la possibilità di sentirmi utile?</p>
+	  </div>
+	
+	 <div id="div1">
+	  		
+	  
+				
+		<div class="square">
+					
+					<div id="bagubagu">Contabilità</div>
+			
+			
+					
+					<hr>
+			
+			
+ 				
+				<div class="duval">
+					Pro<br><hr>
+					<ul>
+						<li>niente sforzi fisici</li>
+						<li>Contatto con il pubblico</li>
+						<li>applicabile nella vita quotidiana</li>
+						<li>Dipendenti dalle Imprese attive</li>
+					<ul>
+				</div>
+				<div class="duval">
+					Contro<br>
+					<hr>	
+					<ul>
+						
+						<li>A stampo piramidale</li>
+						<li>Scarsissima crescita lavorativa</li>
+						<li>misero stipendio</li>
+						<li>lavoro usurante</li>
+					</ul>
+				</div>
+		</div>
+
+		<div class="square">
+					<div id="bungabunga">Web Design</div><br><hr>
+			
+				<div class="duval">
+					Pro<br><hr>
+					<ul>
+						<li>stipendio medio-alto</li>
+						<li>Crescita lavorativa</li>
+						<li>possibilità di cambiare aziende</li>
+						<li>pochi limiti all'applicabilità<br>lavorativa</li>
+						<li>possibilità di lavorare<br>in smartworking</li>		
+					<ul>
+					<button type="button" onclick="change()">Premi</button>
+				</div>
+				<div class="duval">
+					Contro<br><hr>
+					<ul>
+						<li>Concorrenza spietata</li>
+						<li>Programma da studiare<br>immenso.</li>
+						<li>Probabile incontro con Aziende<br>
+							terribili</li>
+						<li>Inizio duro e con pochi soldi</li>
+					
+					
+				</div>
+		 </div>
+			<div class="square">
+				<p><a id="w3s" href="https://www.w3schools.com/" accesskey="W">W3Schools</a> è ottimo per gli esempi.<br>
+				se premi [ALT] + [W] potrai accedere facilmente</p>
+
+				<div>
+					<p id="test">
+						
+
+
+					</p>
+				</div>
+				<!--<input type="button" value="put here" onclick="addiction()">-->
+			</div>
+			
+	</div>
+
+
+	
+	</body>
+<script>
+		//imposta una chiave d'accesso veloce per accedere al sito
+		document.getElementById("w3s").accessKey = "W";
+		//Restituisce la chiave d'accesso
+		/*let key = document.getElementById("w3s").accessKey;
+		document.getElementById("demo").innerHTML = key;*/
+	
+		
+	
+		
+		
+		function mouseEnter(){
+			const lista = [1, 2, 3, 4, 5, 6];
+			for(let i = 0; i < lista.length; i++){
+			let a = document.getElementById("test").innerHTML += lista;
+			return a;
+			}
+		}
+		function mouseOver(){
+			const lista1 = [10,20,30,40,50];
+			for(let i = 0; i<lista.length; i++){
+			let b = document.getElementById("test").innerHTML += lista1;
+			return b;
+			}
+		}
+		function change() {
+			document.getElementByClassName('duval')[0].style.backgroundColor = 'red';
+		}
+
+	
+			
+			
+</script>
+</html>
